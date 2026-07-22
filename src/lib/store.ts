@@ -11,13 +11,26 @@ const ROW_ID = "main";
 let memoryStore: StoreData | null = null;
 let writeQueue: Promise<void> = Promise.resolve();
 
+function isHttpUrl(value: string): boolean {
+  try {
+    const parsed = new URL(value);
+    return parsed.protocol === "http:" || parsed.protocol === "https:";
+  } catch {
+    return false;
+  }
+}
+
 function getSupabase(): SupabaseClient | null {
-  const url = process.env.SUPABASE_URL;
-  const key = process.env.SUPABASE_SERVICE_ROLE_KEY;
-  if (!url || !key) return null;
-  return createClient(url, key, {
-    auth: { persistSession: false, autoRefreshToken: false },
-  });
+  const url = process.env.SUPABASE_URL?.trim();
+  const key = process.env.SUPABASE_SERVICE_ROLE_KEY?.trim();
+  if (!url || !key || !isHttpUrl(url)) return null;
+  try {
+    return createClient(url, key, {
+      auth: { persistSession: false, autoRefreshToken: false },
+    });
+  } catch {
+    return null;
+  }
 }
 
 function mergeStore(raw: unknown): StoreData {
