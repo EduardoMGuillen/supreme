@@ -2,6 +2,7 @@ import Link from "next/link";
 import { ContentGrid } from "@/components/ContentGrid";
 import { Hero } from "@/components/Hero";
 import { MusicPlayer } from "@/components/MusicPlayer";
+import { PhotoMosaic } from "@/components/PhotoMosaic";
 import { SponsorsSection } from "@/components/SponsorsSection";
 import { SocialFollowRow } from "@/components/SocialFollowRow";
 import { readStore } from "@/lib/store";
@@ -31,6 +32,8 @@ export default async function HomePage() {
   return (
     <>
       <Hero isLive={store.liveStatus.isLive} />
+
+      <PhotoMosaic />
 
       <section className="section-pad">
         <div className="container-narrow">

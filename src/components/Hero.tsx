@@ -9,11 +9,11 @@ export function Hero({ isLive }: { isLive: boolean }) {
     <section className="relative min-h-[100svh] overflow-hidden grain bg-bg-muted">
       <div className="absolute inset-0">
         <Image
-          src="/supremo-hero.jpg"
+          src="/supremo5.png"
           alt="Supremo"
           fill
           priority
-          className="object-cover object-[center_18%] md:object-[center_12%]"
+          className="object-cover object-[center_22%] md:object-[center_15%]"
           sizes="100vw"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-black/75 via-black/35 to-transparent" />
@@ -45,7 +45,7 @@ export function Hero({ isLive }: { isLive: boolean }) {
           transition={{ duration: 0.65, delay: 0.2 }}
           className="mt-6 max-w-md text-white/80 text-base md:text-lg leading-relaxed"
         >
-          Humor, música y partidos. El hub de todo lo que está pasando ahora.
+          El Principe de Honduras 👑
         </motion.p>
 
         <motion.div

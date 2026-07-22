@@ -44,7 +44,7 @@ export default async function EventoDetailPage({
       name: event.venue || event.city || "Honduras",
       address: event.city || "Honduras",
     },
-    image: event.cover ? [event.cover] : [`${SITE_URL}/supremo-hero.jpg`],
+    image: event.cover ? [event.cover] : [`${SITE_URL}/supremo5.png`],
     description: event.description,
     organizer: {
       "@type": "Person",
