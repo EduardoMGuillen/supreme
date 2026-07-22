@@ -12,22 +12,16 @@ function mergeSocial(
   existing: SocialItem[],
   incoming: SocialItem[],
 ): SocialItem[] {
-  const pinned = existing.filter((i) => i.pinned || i.hidden);
   const map = new Map<string, SocialItem>();
-  for (const item of incoming) map.set(item.id, item);
-  for (const item of pinned) {
-    const base = map.get(item.id);
-    map.set(item.id, { ...base, ...item, ...(!base ? item : {}) });
-  }
-  // Preserve hidden/pinned flags on synced ids
-  for (const item of existing) {
-    if (map.has(item.id) && (item.hidden || item.pinned)) {
-      map.set(item.id, {
-        ...map.get(item.id)!,
-        hidden: item.hidden,
-        pinned: item.pinned,
-      });
-    }
+  // Keep previously synced platforms, then overlay this adapter's items
+  for (const item of existing) map.set(item.id, item);
+  for (const item of incoming) {
+    const prev = map.get(item.id);
+    map.set(item.id, {
+      ...item,
+      pinned: prev?.pinned ?? item.pinned,
+      hidden: prev?.hidden ?? item.hidden,
+    });
   }
   return [...map.values()]
     .filter((i) => !i.hidden)
@@ -103,8 +97,9 @@ export async function runSync(): Promise<{
       if (r.tracks?.length) {
         tracks = mergeTracks(tracks, r.tracks);
       }
-      if (r.platform === "youtube" && r.message?.startsWith("channelId=")) {
-        youtubeChannelId = r.message.replace("channelId=", "");
+      if (r.platform === "youtube" && r.message) {
+        const idMatch = r.message.match(/channelId=(UC[\w-]{22})/);
+        if (idMatch) youtubeChannelId = idMatch[1];
       }
       if (r.live && store.liveStatus.source !== "manual") {
         live = {

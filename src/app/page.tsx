@@ -3,7 +3,7 @@ import { ContentGrid } from "@/components/ContentGrid";
 import { Hero } from "@/components/Hero";
 import { MusicPlayer } from "@/components/MusicPlayer";
 import { SponsorsSection } from "@/components/SponsorsSection";
-import { SOCIAL_LINKS } from "@/lib/site";
+import { SocialFollowRow } from "@/components/SocialFollowRow";
 import { readStore } from "@/lib/store";
 
 export default async function HomePage() {
@@ -199,19 +199,7 @@ export default async function HomePage() {
           <p className="text-[0.72rem] tracking-[0.16em] uppercase text-ink-soft mb-6">
             Síguelo
           </p>
-          <div className="flex flex-wrap gap-x-8 gap-y-4 font-display text-2xl md:text-4xl tracking-[0.04em]">
-            {SOCIAL_LINKS.map((s) => (
-              <a
-                key={s.key}
-                href={store.config.handles[s.key]}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-accent transition-colors"
-              >
-                {s.label}
-              </a>
-            ))}
-          </div>
+          <SocialFollowRow handles={store.config.handles} />
         </div>
       </section>
     </>

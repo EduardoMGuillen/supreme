@@ -50,6 +50,11 @@ a {
   text-decoration: none;
 }
 
+/* Selected filter chips: beat `a { color: inherit }` */
+a.filter-chip.is-active {
+  color: #ffffff;
+}
+
 img {
   max-width: 100%;
   height: auto;

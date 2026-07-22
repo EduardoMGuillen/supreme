@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { SOCIAL_LINKS } from "@/lib/site";
+import { SocialFollowRow } from "@/components/SocialFollowRow";
 import { readStore } from "@/lib/store";
 
 export const metadata: Metadata = {
@@ -44,20 +44,7 @@ export default async function AcercaPage() {
           <p className="text-[0.72rem] tracking-[0.14em] uppercase text-ink-soft mb-5">
             Redes oficiales
           </p>
-          <ul className="space-y-3">
-            {SOCIAL_LINKS.map((s) => (
-              <li key={s.key}>
-                <a
-                  href={store.config.handles[s.key]}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="font-display text-2xl tracking-[0.04em] hover:text-accent"
-                >
-                  {s.label}
-                </a>
-              </li>
-            ))}
-          </ul>
+          <SocialFollowRow handles={store.config.handles} />
         </div>
       </div>
     </div>
