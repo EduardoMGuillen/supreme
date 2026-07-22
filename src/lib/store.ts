@@ -5,7 +5,7 @@ import { createEmptyStore } from "./site";
 import type { StoreData } from "./types";
 
 const STORE_PATH = path.join(process.cwd(), "data", "store.json");
-const TABLE = "site_state";
+const TABLE = "supremo_site_state";
 const ROW_ID = "main";
 
 let memoryStore: StoreData | null = null;
@@ -98,6 +98,10 @@ export async function writeStore(
       if (error) {
         throw new Error(`Supabase write failed: ${error.message}`);
       }
+    } else if (process.env.VERCEL) {
+      throw new Error(
+        "En Vercel hace falta SUPABASE_URL + SUPABASE_SERVICE_ROLE_KEY (el filesystem es read-only). Crea la tabla supremo_site_state con supabase/schema.sql.",
+      );
     } else {
       await writeToFile(next);
     }
