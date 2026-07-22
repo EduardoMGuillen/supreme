@@ -10,7 +10,7 @@ export default function TerminosPage() {
         <div className="space-y-4 leading-relaxed text-ink-soft">
           <p>
             El contenido de este sitio (marca, textos, imágenes propias y
-            materiales publicados) pertenece a SoySupremo o a sus respectivos
+            materiales publicados) pertenece a Supremo o a sus respectivos
             titulares.
           </p>
           <p>

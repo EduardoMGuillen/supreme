@@ -1,6 +1,6 @@
-# SoySupremo — soysupremohn.com
+# Supremo — soysupremohn.com
 
-Sitio oficial premium de Supremo / SoySupremo.
+Sitio oficial premium de Supremo.
 
 ## Stack
 

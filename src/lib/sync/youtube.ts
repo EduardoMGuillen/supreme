@@ -166,7 +166,7 @@ export async function syncYouTube(ctx: SyncContext): Promise<AdapterResult> {
         {
           id: "youtube:channel",
           platform: "youtube",
-          title: "Canal SoySupremo en YouTube",
+          title: "Canal Supremo en YouTube",
           url: "https://www.youtube.com/@SoySupremoo",
           publishedAt: new Date().toISOString(),
         },

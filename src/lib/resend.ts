@@ -17,7 +17,7 @@ export async function sendContactEmail(input: {
   const apiKey = process.env.RESEND_API_KEY;
   const to = process.env.CONTACT_TO_EMAIL || "soysupremohn@gmail.com";
   const from =
-    process.env.CONTACT_FROM_EMAIL || "SoySupremo Web <onboarding@resend.dev>";
+    process.env.CONTACT_FROM_EMAIL || "Supremo Web <onboarding@resend.dev>";
 
   if (!apiKey) {
     return {

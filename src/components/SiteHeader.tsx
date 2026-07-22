@@ -20,7 +20,7 @@ export function SiteHeader() {
     <header className="sticky top-0 z-40 border-b border-[var(--line)] bg-[color-mix(in_srgb,var(--bg)_88%,transparent)] backdrop-blur-md">
       <div className="container-narrow flex items-center justify-between gap-4 px-4 py-4">
         <Link href="/" className="font-display text-xl tracking-[0.08em]">
-          SOY SUPREMO
+          SUPREMO
         </Link>
 
         <nav className="hidden md:flex items-center gap-7 text-[0.78rem] tracking-[0.12em] uppercase">

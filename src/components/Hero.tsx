@@ -36,8 +36,6 @@ export function Hero({ isLive }: { isLive: boolean }) {
           transition={{ duration: 0.75, delay: 0.08 }}
           className="font-display text-white text-[clamp(3.4rem,14vw,8.5rem)] leading-[0.88] tracking-[-0.03em] max-w-4xl"
         >
-          SOY
-          <br />
           SUPREMO
         </motion.h1>
 

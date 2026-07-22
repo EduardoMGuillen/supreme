@@ -5,7 +5,7 @@ import { readStore } from "@/lib/store";
 
 export const metadata: Metadata = {
   title: "Acerca de",
-  description: "Quién es Supremo / SoySupremo.",
+  description: "Quién es Supremo.",
 };
 
 export default async function AcercaPage() {
@@ -22,7 +22,7 @@ export default async function AcercaPage() {
             Supremo
           </h1>
           <p className="mt-8 text-lg leading-relaxed text-ink-soft max-w-xl">
-            Lester Cardona, conocido como Supremo o SoySupremo, es uno de los
+            Lester Cardona, conocido como Supremo, es uno de los
             creadores más grandes de Honduras. Humor, música, lives y partidos
             entre selecciones de tiktokers: contenido que mueve Centroamérica.
           </p>

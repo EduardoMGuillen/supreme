@@ -1,4 +1,4 @@
-Pending Updates — SoySupremo (soysupremohn.com)
+Pending Updates — Supremo (soysupremohn.com)
 ================================================
 Última actualización: 2026-07-22
 
@@ -69,7 +69,7 @@ Bloqueo: DNS del dominio en Resend (y API key)
 Pasos:
   - Crear cuenta Resend, verificar soysupremohn.com
   - RESEND_API_KEY
-  - CONTACT_FROM_EMAIL=SoySupremo Web <noreply@soysupremohn.com>
+  - CONTACT_FROM_EMAIL=Supremo Web <noreply@soysupremohn.com>
   - CONTACT_TO_EMAIL=soysupremohn@gmail.com
 Nota: sin API key los mensajes IGUAL se guardan en admin (bandeja Mensajes)
 
