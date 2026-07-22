@@ -1,0 +1,87 @@
+{
+  "version": 1,
+  "updatedAt": "2026-07-22T03:48:44.772Z",
+  "socialItems": [
+    {
+      "id": "twitter:profile",
+      "platform": "twitter",
+      "title": "X @soysupremo_",
+      "url": "https://x.com/soysupremo_",
+      "publishedAt": "2026-07-22T03:48:44.177Z"
+    }
+  ],
+  "tracks": [],
+  "events": [],
+  "posts": [],
+  "announcements": [],
+  "sponsors": [],
+  "liveStatus": {
+    "isLive": false,
+    "platform": "tiktok",
+    "url": "https://www.tiktok.com/@supremolives/live",
+    "title": "",
+    "updatedAt": "1970-01-01T00:00:00.000Z",
+    "source": "manual"
+  },
+  "contactMessages": [],
+  "config": {
+    "siteName": "SoySupremo",
+    "siteUrl": "https://soysupremohn.com",
+    "tagline": "Humor, música y partidos. Desde Honduras para el mundo.",
+    "contactEmail": "soysupremohn@gmail.com",
+    "handles": {
+      "tiktok": "https://www.tiktok.com/@supremolives",
+      "youtube": "https://www.youtube.com/@SoySupremoo",
+      "instagram": "https://www.instagram.com/soysupremo_/",
+      "facebook": "https://www.facebook.com/Supremotok/",
+      "twitter": "https://x.com/soysupremo_",
+      "spotify": "https://open.spotify.com/intl-es/artist/38Lid4XKPqZ2hSdxHTmbit"
+    },
+    "youtubeChannelId": "UCfy7Ubh9Ciy82CKxgyYtxIA",
+    "spotifyArtistId": "38Lid4XKPqZ2hSdxHTmbit",
+    "syncLog": [
+      {
+        "platform": "youtube",
+        "status": "ok",
+        "message": "channelId=UCfy7Ubh9Ciy82CKxgyYtxIA",
+        "count": 15,
+        "at": "2026-07-22T03:48:44.772Z"
+      },
+      {
+        "platform": "spotify",
+        "status": "skipped",
+        "message": "Faltan SPOTIFY_CLIENT_ID / SPOTIFY_CLIENT_SECRET (gratis en Spotify Developer)",
+        "at": "2026-07-22T03:48:44.772Z"
+      },
+      {
+        "platform": "tiktok",
+        "status": "ok",
+        "message": "Offline / best-effort",
+        "count": 1,
+        "at": "2026-07-22T03:48:44.772Z"
+      },
+      {
+        "platform": "instagram",
+        "status": "skipped",
+        "message": "Configurar META_ACCESS_TOKEN + IG_USER_ID (Graph API gratis con cuenta Business)",
+        "count": 1,
+        "at": "2026-07-22T03:48:44.772Z"
+      },
+      {
+        "platform": "facebook",
+        "status": "skipped",
+        "message": "Configurar META_ACCESS_TOKEN + FB_PAGE_ID (token de página gratis)",
+        "count": 1,
+        "at": "2026-07-22T03:48:44.772Z"
+      },
+      {
+        "platform": "twitter",
+        "status": "skipped",
+        "message": "API de X requiere plan de pago. Configurar X_BEARER_TOKEN + X_USER_ID",
+        "count": 1,
+        "at": "2026-07-22T03:48:44.772Z"
+      }
+    ],
+    "lastSyncAt": "2026-07-22T03:48:44.772Z"
+  }
+}

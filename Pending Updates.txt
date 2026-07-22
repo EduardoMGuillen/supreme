@@ -1,0 +1,97 @@
+Pending Updates — SoySupremo (soysupremohn.com)
+================================================
+Última actualización: 2026-07-22
+
+Este archivo lista lo que NO está 100% automatizado de forma gratuita/estable.
+El código ya está cableado: al completar los pasos, se activa sin reescribir.
+
+------------------------------------------------
+1) Spotify discografía automática
+Estado: listo en código (src/lib/sync/spotify.ts)
+Bloqueo: faltan credenciales de app gratuita Spotify Developer
+Pasos:
+  - Crear app en https://developer.spotify.com/dashboard
+  - Copiar Client ID y Client Secret
+  - Setear SPOTIFY_CLIENT_ID y SPOTIFY_CLIENT_SECRET en Vercel
+  - Redeploy + correr sync desde /dashboard
+Resultado: tracks con cover, preview 30s y link a Spotify
+
+------------------------------------------------
+2) Instagram feed automático (Graph API)
+Estado: adapter listo (src/lib/sync/instagram.ts)
+Bloqueo: requiere Meta Business + Instagram profesional vinculado
+Pasos:
+  - Crear app Meta, conectar Page + IG Business
+  - Obtener META_ACCESS_TOKEN e IG_USER_ID
+  - Setear env en Vercel y sincronizar
+Mientras tanto: se muestra tarjeta de perfil @soysupremo_
+
+------------------------------------------------
+3) Facebook Page feed automático
+Estado: adapter listo (src/lib/sync/facebook.ts)
+Bloqueo: token de página (gratis) + FB_PAGE_ID
+Pasos:
+  - META_ACCESS_TOKEN (page token) + FB_PAGE_ID en Vercel
+  - Sync
+Mientras tanto: tarjeta de perfil Supremotok
+
+------------------------------------------------
+4) X / Twitter feed automático
+Estado: adapter listo (src/lib/sync/twitter.ts)
+Bloqueo: API de X es de PAGO
+Pasos:
+  - Contratar plan X API
+  - Setear X_BEARER_TOKEN + X_USER_ID
+  - Sync
+Mientras tanto: tarjeta de perfil @soysupremo_
+
+------------------------------------------------
+5) TikTok LIVE 100% fiable
+Estado: best-effort + toggle manual en admin (src/lib/sync/tiktok.ts, /api/admin/live)
+Bloqueo: no hay API pública oficial gratuita estable; scrapes fallan desde IPs cloud
+Pasos actuales:
+  - Usar toggle "Activar LIVE" en /dashboard → Live
+Opcional futuro (pago/terceros):
+  - Integrar servicio de monitoring (Apify / TikTool) y mapear a liveStatus.source=auto
+
+------------------------------------------------
+6) TikTok videos recientes estables
+Estado: best-effort scrape; puede devolver solo link de perfil
+Bloqueo: TikTok no ofrece feed público gratis fiable
+Pasos:
+  - Pin/ocultar items desde admin → Social
+  - O integrar API de terceros de pago y enchufarla en syncTikTok()
+
+------------------------------------------------
+7) Resend — dominio de envío verificado
+Estado: formulario + API listos (src/app/api/contact, src/lib/resend.ts)
+Bloqueo: DNS del dominio en Resend (y API key)
+Pasos:
+  - Crear cuenta Resend, verificar soysupremohn.com
+  - RESEND_API_KEY
+  - CONTACT_FROM_EMAIL=SoySupremo Web <noreply@soysupremohn.com>
+  - CONTACT_TO_EMAIL=soysupremohn@gmail.com
+Nota: sin API key los mensajes IGUAL se guardan en admin (bandeja Mensajes)
+
+------------------------------------------------
+8) Supabase en producción
+Estado: schema + store dual file/Supabase listos
+Bloqueo: proyecto Supabase no creado aún
+Pasos:
+  - Crear proyecto, correr supabase/schema.sql
+  - SUPABASE_URL + SUPABASE_SERVICE_ROLE_KEY en Vercel Production
+  - Redeploy; /api/health debe decir storage: supabase
+
+------------------------------------------------
+9) Cron automático
+Estado: vercel.json + GitHub Actions workflow listos
+Bloqueo: secretos de producción
+Pasos:
+  - CRON_SECRET en Vercel y GitHub Secrets
+  - SITE_URL en GitHub Secrets (https://soysupremohn.com)
+  - Vercel Cron llama /api/admin/sync cada 2h (Bearer CRON_SECRET vía Vercel cron auth — si Vercel no envía Bearer, usar GHA cada 30m)
+
+------------------------------------------------
+10) Analytics / AdSense (opcional, no pedido en v1)
+Estado: no implementado a propósito
+Pasos futuros: GA4 + AdSense slots si se solicitan

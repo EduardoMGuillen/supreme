@@ -1,0 +1,94 @@
+import type { Metadata } from "next";
+import { Archivo_Black, Outfit } from "next/font/google";
+import { AnnouncementTicker } from "@/components/AnnouncementTicker";
+import { LiveBanner } from "@/components/LiveBanner";
+import { PublicChrome } from "@/components/PublicChrome";
+import { SiteFooter } from "@/components/SiteFooter";
+import { SiteHeader } from "@/components/SiteHeader";
+import { isAnnouncementVisible, SITE_URL } from "@/lib/site";
+import { readStore } from "@/lib/store";
+import "./globals.css";
+
+const display = Archivo_Black({
+  weight: "400",
+  subsets: ["latin"],
+  variable: "--font-display",
+  display: "swap",
+});
+
+const body = Outfit({
+  subsets: ["latin"],
+  variable: "--font-body",
+  display: "swap",
+});
+
+export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
+  title: {
+    default: "SoySupremo | Humor, música y partidos",
+    template: "%s | SoySupremo",
+  },
+  description:
+    "Sitio oficial de Supremo (SoySupremo). Contenido, música, eventos, lives y colaboraciones desde Honduras.",
+  openGraph: {
+    type: "website",
+    locale: "es_HN",
+    url: SITE_URL,
+    siteName: "SoySupremo",
+    title: "SoySupremo",
+    description:
+      "Humor, música y partidos entre selecciones de tiktokers. El hub oficial de Supremo.",
+    images: [{ url: "/supremo-hero.jpg", width: 1200, height: 1600 }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "SoySupremo",
+    description: "Humor, música y partidos. Desde Honduras.",
+    images: ["/supremo-hero.jpg"],
+  },
+  icons: { icon: "/favicon.ico" },
+};
+
+export const dynamic = "force-dynamic";
+
+export default async function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  const store = await readStore();
+  const announcements = store.announcements
+    .filter((a) => isAnnouncementVisible(a))
+    .sort((a, b) => a.order - b.order);
+
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    name: "Supremo",
+    alternateName: ["SoySupremo", "Lester Cardona"],
+    url: SITE_URL,
+    image: `${SITE_URL}/supremo-hero.jpg`,
+    sameAs: Object.values(store.config.handles),
+    jobTitle: "Influencer, comediante y cantante",
+    nationality: "Honduran",
+  };
+
+  return (
+    <html lang="es" className={`${display.variable} ${body.variable}`}>
+      <body className="min-h-screen flex flex-col bg-bg text-ink">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+        <PublicChrome
+          ticker={<AnnouncementTicker items={announcements} />}
+          live={<LiveBanner live={store.liveStatus} />}
+          header={<SiteHeader />}
+          footer={<SiteFooter config={store.config} />}
+        >
+          {children}
+        </PublicChrome>
+      </body>
+    </html>
+  );
+}
