@@ -16,6 +16,12 @@ export async function GET() {
     syncStale: stale,
     cronConfigured: Boolean(process.env.CRON_SECRET),
     live: store.liveStatus.isLive,
+    tracks: store.tracks.length,
+    spotify: store.config.syncLog.find((l) => l.platform === "spotify") || null,
+    spotifyEnv: Boolean(
+      process.env.SPOTIFY_CLIENT_ID?.trim() &&
+        process.env.SPOTIFY_CLIENT_SECRET?.trim(),
+    ),
     updatedAt: store.updatedAt,
   });
 }

@@ -13,7 +13,7 @@ export function Hero({ isLive }: { isLive: boolean }) {
           alt="Supremo"
           fill
           priority
-          className="object-cover object-[center_bottom]"
+          className="object-cover object-center"
           sizes="100vw"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-black/75 via-black/35 to-transparent" />
