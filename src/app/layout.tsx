@@ -38,15 +38,19 @@ export const metadata: Metadata = {
     title: "Supremo",
     description:
       "Humor, música y partidos entre selecciones de tiktokers. El hub oficial de Supremo.",
-    images: [{ url: "/supremo5.png", width: 1200, height: 1600 }],
+    images: [{ url: "/foto-supremo.jpg", width: 1200, height: 1200 }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Supremo",
     description: "Humor, música y partidos. Desde Honduras.",
-    images: ["/supremo5.png"],
+    images: ["/foto-supremo.jpg"],
   },
-  icons: { icon: "/favicon.ico" },
+  icons: {
+    icon: [{ url: "/foto-supremo.jpg", type: "image/jpeg" }],
+    apple: [{ url: "/foto-supremo.jpg", type: "image/jpeg" }],
+    shortcut: "/foto-supremo.jpg",
+  },
 };
 
 export const dynamic = "force-dynamic";
@@ -67,7 +71,7 @@ export default async function RootLayout({
     name: "Supremo",
     alternateName: ["Lester Cardona", "SoySupremo"],
     url: SITE_URL,
-    image: `${SITE_URL}/supremo5.png`,
+    image: `${SITE_URL}/foto-supremo.jpg`,
     sameAs: Object.values(store.config.handles),
     jobTitle: "Influencer, comediante y cantante",
     nationality: "Honduran",

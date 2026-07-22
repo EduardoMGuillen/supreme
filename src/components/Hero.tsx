@@ -9,11 +9,11 @@ export function Hero({ isLive }: { isLive: boolean }) {
     <section className="relative min-h-[100svh] overflow-hidden grain bg-bg-muted">
       <div className="absolute inset-0">
         <Image
-          src="/supremo5.png"
+          src="/supremo5.jpg"
           alt="Supremo"
           fill
           priority
-          className="object-cover object-[center_22%] md:object-[center_15%]"
+          className="object-cover object-[center_bottom]"
           sizes="100vw"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-black/75 via-black/35 to-transparent" />
