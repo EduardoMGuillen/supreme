@@ -139,25 +139,25 @@ async function fetchEmbedTracks(artistId: string): Promise<SpotifyTrack[]> {
     entity.coverArt?.sources?.[0]?.url ||
     undefined;
 
-  return entity.trackList
-    .map((t) => {
-      const id = t.uri?.replace("spotify:track:", "") || "";
-      if (!id || !t.title) return null;
-      const artists = (t.subtitle || "")
-        .split(/[,·•]/)
-        .map((s) => s.trim())
-        .filter(Boolean)
-        .map((name) => ({ name }));
-      return {
-        id,
-        name: t.title,
-        preview_url: t.audioPreview?.url || null,
-        external_urls: { spotify: `https://open.spotify.com/track/${id}` },
-        artists,
-        album: cover ? { images: [{ url: cover }] } : undefined,
-      } satisfies SpotifyTrack;
-    })
-    .filter((t): t is SpotifyTrack => Boolean(t));
+  const tracks: SpotifyTrack[] = [];
+  for (const t of entity.trackList) {
+    const id = t.uri?.replace("spotify:track:", "") || "";
+    if (!id || !t.title) continue;
+    const artists = (t.subtitle || "")
+      .split(/[,·•]/)
+      .map((s) => s.trim())
+      .filter(Boolean)
+      .map((name) => ({ name }));
+    tracks.push({
+      id,
+      name: t.title,
+      preview_url: t.audioPreview?.url || null,
+      external_urls: { spotify: `https://open.spotify.com/track/${id}` },
+      artists,
+      album: cover ? { images: [{ url: cover }] } : undefined,
+    });
+  }
+  return tracks;
 }
 
 export async function syncSpotify(ctx: SyncContext): Promise<AdapterResult> {
