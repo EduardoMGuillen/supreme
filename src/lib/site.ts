@@ -5,7 +5,7 @@ export const SITE_URL =
   "https://soysupremohn.com";
 
 export const DEFAULT_CONFIG: StoreData["config"] = {
-  siteName: "SoySupremo",
+  siteName: "Supremo",
   siteUrl: SITE_URL,
   tagline: "Humor, música y partidos. Desde Honduras para el mundo.",
   contactEmail: "soysupremohn@gmail.com",

@@ -1,13 +1,130 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-22T03:48:44.772Z",
+  "updatedAt": "2026-07-22T06:58:27.710Z",
   "socialItems": [
+    {
+      "id": "youtube:THiGjc9rFtM",
+      "platform": "youtube",
+      "title": "Dani Flow - CHUPA TRAGA Y LAME REMIX - Supremo & Mr JC (Explicít) ",
+      "thumbnail": "https://i.ytimg.com/vi/THiGjc9rFtM/hqdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=THiGjc9rFtM",
+      "publishedAt": "2026-07-22T06:58:27.710Z"
+    },
+    {
+      "id": "youtube:Ck5KHzusDD4",
+      "platform": "youtube",
+      "title": "YO NO LOS VEO RMX - Supremo, Andro Skrt, Yeik, Ricky, Davis Flow, Mr Jc, Kortez ",
+      "thumbnail": "https://i.ytimg.com/vi/Ck5KHzusDD4/hqdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=Ck5KHzusDD4",
+      "publishedAt": "2026-07-22T06:58:27.666Z"
+    },
+    {
+      "id": "youtube:OCXSOpgaRxI",
+      "platform": "youtube",
+      "title": "La Caldera echando humo: Honduras vs El Salvador, pura garra y corazón | Supremo",
+      "thumbnail": "https://i.ytimg.com/vi/OCXSOpgaRxI/hqdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=OCXSOpgaRxI",
+      "publishedAt": "2026-07-22T06:58:27.623Z"
+    },
+    {
+      "id": "youtube:q8XV5L5UGxU",
+      "platform": "youtube",
+      "title": "WÜIRRA PI$ONA - Supremo, La Tortuga, Amaya The Lic, Yeik",
+      "thumbnail": "https://i.ytimg.com/vi/q8XV5L5UGxU/hqdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=q8XV5L5UGxU",
+      "publishedAt": "2026-07-22T06:58:27.588Z"
+    },
+    {
+      "id": "youtube:YHphoxI0Qgo",
+      "platform": "youtube",
+      "title": "PA MOVER EL BOTE ft. Supremo, João Ferreira y Andro SKRT (Official Video)",
+      "thumbnail": "https://i.ytimg.com/vi/YHphoxI0Qgo/hqdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=YHphoxI0Qgo",
+      "publishedAt": "2026-07-22T06:58:27.547Z"
+    },
+    {
+      "id": "youtube:djnj0fFuXz4",
+      "platform": "youtube",
+      "title": "PA MOVER EL BOTE REMIX ( VIDEO LYRICS )- Jr Clark, Milagro Flores, Andro Skrt y Supremo",
+      "thumbnail": "https://i.ytimg.com/vi/djnj0fFuXz4/hqdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=djnj0fFuXz4",
+      "publishedAt": "2026-07-22T06:58:27.505Z"
+    },
+    {
+      "id": "youtube:l3lideaOfmQ",
+      "platform": "youtube",
+      "title": "SUPREMO ❌ NFASIS | CINTURA 🎥 VIDEO OFICIAL🔥💃",
+      "thumbnail": "https://i.ytimg.com/vi/l3lideaOfmQ/hqdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=l3lideaOfmQ",
+      "publishedAt": "2026-07-22T06:58:27.460Z"
+    },
+    {
+      "id": "youtube:7bDYLffkJvY",
+      "platform": "youtube",
+      "title": "Nos estamos CONOCIENDO   Milagro Flores y Supremo - FULL STREAM",
+      "thumbnail": "https://i.ytimg.com/vi/7bDYLffkJvY/hqdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=7bDYLffkJvY",
+      "publishedAt": "2026-07-22T06:58:27.419Z"
+    },
+    {
+      "id": "youtube:bZKYzsoHrvU",
+      "platform": "youtube",
+      "title": "CR7 HONDUREÑO Y SUPREMO - FULL STREAM",
+      "thumbnail": "https://i.ytimg.com/vi/bZKYzsoHrvU/hqdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=bZKYzsoHrvU",
+      "publishedAt": "2026-07-22T06:58:27.382Z"
+    },
+    {
+      "id": "youtube:BmcBmYhTRmU",
+      "platform": "youtube",
+      "title": "BENDITOS LOS SORDOS - Supremo, ALINNE & Andro SKRT",
+      "thumbnail": "https://i.ytimg.com/vi/BmcBmYhTRmU/hqdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=BmcBmYhTRmU",
+      "publishedAt": "2026-07-22T06:58:27.344Z"
+    },
+    {
+      "id": "youtube:9-JHAywXaz4",
+      "platform": "youtube",
+      "title": "Maje WTF - Supremo, El Chevo, Andro Skrt",
+      "thumbnail": "https://i.ytimg.com/vi/9-JHAywXaz4/hqdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=9-JHAywXaz4",
+      "publishedAt": "2026-07-22T06:58:27.299Z"
+    },
+    {
+      "id": "youtube:frqFPAJ9Ap0",
+      "platform": "youtube",
+      "title": "LA COJA - Supremo ❌ Milagro Flores ❌ Andro Skrt",
+      "thumbnail": "https://i.ytimg.com/vi/frqFPAJ9Ap0/hqdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=frqFPAJ9Ap0",
+      "publishedAt": "2026-07-22T06:58:27.252Z"
+    },
+    {
+      "id": "tiktok:profile",
+      "platform": "tiktok",
+      "title": "Ver @supremolives en TikTok",
+      "url": "https://www.tiktok.com/@supremolives",
+      "publishedAt": "2026-07-22T06:58:27.127Z"
+    },
     {
       "id": "twitter:profile",
       "platform": "twitter",
       "title": "X @soysupremo_",
       "url": "https://x.com/soysupremo_",
-      "publishedAt": "2026-07-22T03:48:44.177Z"
+      "publishedAt": "2026-07-22T06:58:26.716Z"
+    },
+    {
+      "id": "instagram:profile",
+      "platform": "instagram",
+      "title": "Instagram @soysupremo_",
+      "url": "https://www.instagram.com/soysupremo_/",
+      "publishedAt": "2026-07-22T06:58:26.715Z"
+    },
+    {
+      "id": "facebook:profile",
+      "platform": "facebook",
+      "title": "Facebook Supremotok",
+      "url": "https://www.facebook.com/Supremotok/",
+      "publishedAt": "2026-07-22T06:58:26.715Z"
     }
   ],
   "tracks": [],
@@ -25,7 +142,7 @@
   },
   "contactMessages": [],
   "config": {
-    "siteName": "SoySupremo",
+    "siteName": "Supremo",
     "siteUrl": "https://soysupremohn.com",
     "tagline": "Humor, música y partidos. Desde Honduras para el mundo.",
     "contactEmail": "soysupremohn@gmail.com",
@@ -37,51 +154,51 @@
       "twitter": "https://x.com/soysupremo_",
       "spotify": "https://open.spotify.com/intl-es/artist/38Lid4XKPqZ2hSdxHTmbit"
     },
-    "youtubeChannelId": "UCfy7Ubh9Ciy82CKxgyYtxIA",
+    "youtubeChannelId": "UCfy7Ubh9Ciy82CKxgyYtxIA;source=scrape;source=scrape",
     "spotifyArtistId": "38Lid4XKPqZ2hSdxHTmbit",
     "syncLog": [
       {
         "platform": "youtube",
         "status": "ok",
-        "message": "channelId=UCfy7Ubh9Ciy82CKxgyYtxIA",
-        "count": 15,
-        "at": "2026-07-22T03:48:44.772Z"
+        "message": "channelId=UCfy7Ubh9Ciy82CKxgyYtxIA;source=scrape;source=scrape",
+        "count": 12,
+        "at": "2026-07-22T06:58:27.710Z"
       },
       {
         "platform": "spotify",
         "status": "skipped",
         "message": "Faltan SPOTIFY_CLIENT_ID / SPOTIFY_CLIENT_SECRET (gratis en Spotify Developer)",
-        "at": "2026-07-22T03:48:44.772Z"
+        "at": "2026-07-22T06:58:27.710Z"
       },
       {
         "platform": "tiktok",
         "status": "ok",
         "message": "Offline / best-effort",
         "count": 1,
-        "at": "2026-07-22T03:48:44.772Z"
+        "at": "2026-07-22T06:58:27.710Z"
       },
       {
         "platform": "instagram",
         "status": "skipped",
         "message": "Configurar META_ACCESS_TOKEN + IG_USER_ID (Graph API gratis con cuenta Business)",
         "count": 1,
-        "at": "2026-07-22T03:48:44.772Z"
+        "at": "2026-07-22T06:58:27.710Z"
       },
       {
         "platform": "facebook",
         "status": "skipped",
         "message": "Configurar META_ACCESS_TOKEN + FB_PAGE_ID (token de página gratis)",
         "count": 1,
-        "at": "2026-07-22T03:48:44.772Z"
+        "at": "2026-07-22T06:58:27.710Z"
       },
       {
         "platform": "twitter",
         "status": "skipped",
         "message": "API de X requiere plan de pago. Configurar X_BEARER_TOKEN + X_USER_ID",
         "count": 1,
-        "at": "2026-07-22T03:48:44.772Z"
+        "at": "2026-07-22T06:58:27.710Z"
       }
     ],
-    "lastSyncAt": "2026-07-22T03:48:44.772Z"
+    "lastSyncAt": "2026-07-22T06:58:27.710Z"
   }
 }

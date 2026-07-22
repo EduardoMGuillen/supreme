@@ -37,7 +37,7 @@ export default function LoginPage() {
         className="w-full max-w-sm border border-ink bg-bg p-8 grid gap-4"
       >
         <h1 className="font-display text-3xl tracking-wide">Admin</h1>
-        <p className="text-sm text-ink-soft -mt-2">SoySupremo · panel</p>
+        <p className="text-sm text-ink-soft -mt-2">Supremo · panel</p>
         <div>
           <label className="label" htmlFor="username">
             Usuario

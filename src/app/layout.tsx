@@ -25,24 +25,24 @@ const body = Outfit({
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "SoySupremo | Humor, música y partidos",
-    template: "%s | SoySupremo",
+    default: "Supremo | Humor, música y partidos",
+    template: "%s | Supremo",
   },
   description:
-    "Sitio oficial de Supremo (SoySupremo). Contenido, música, eventos, lives y colaboraciones desde Honduras.",
+    "Sitio oficial de Supremo. Contenido, música, eventos, lives y colaboraciones desde Honduras.",
   openGraph: {
     type: "website",
     locale: "es_HN",
     url: SITE_URL,
-    siteName: "SoySupremo",
-    title: "SoySupremo",
+    siteName: "Supremo",
+    title: "Supremo",
     description:
       "Humor, música y partidos entre selecciones de tiktokers. El hub oficial de Supremo.",
     images: [{ url: "/supremo-hero.jpg", width: 1200, height: 1600 }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "SoySupremo",
+    title: "Supremo",
     description: "Humor, música y partidos. Desde Honduras.",
     images: ["/supremo-hero.jpg"],
   },
@@ -65,7 +65,7 @@ export default async function RootLayout({
     "@context": "https://schema.org",
     "@type": "Person",
     name: "Supremo",
-    alternateName: ["SoySupremo", "Lester Cardona"],
+    alternateName: ["Lester Cardona", "SoySupremo"],
     url: SITE_URL,
     image: `${SITE_URL}/supremo-hero.jpg`,
     sameAs: Object.values(store.config.handles),

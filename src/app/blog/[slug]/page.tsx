@@ -37,7 +37,7 @@ export default async function BlogPostPage({
     datePublished: post.publishedAt,
     description: post.excerpt,
     image: post.cover || `${SITE_URL}/supremo-hero.jpg`,
-    author: { "@type": "Person", name: "SoySupremo" },
+    author: { "@type": "Person", name: "Supremo" },
   };
 
   return (

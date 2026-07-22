@@ -46,7 +46,7 @@ export async function fetchText(
     ...init,
     headers: {
       "User-Agent":
-        "Mozilla/5.0 (compatible; SoySupremoBot/1.0; +https://soysupremohn.com)",
+        "Mozilla/5.0 (compatible; SupremoBot/1.0; +https://soysupremohn.com)",
       Accept: "application/json, text/html, application/xml, */*",
       ...(init?.headers || {}),
     },

@@ -5,14 +5,14 @@ import { SITE_URL } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Contacto / Patrocinios",
   description:
-    "Contacto, patrocinios y colaboraciones con SoySupremo. Escríbenos a soysupremohn@gmail.com.",
+    "Contacto, patrocinios y colaboraciones con Supremo. Escríbenos a soysupremohn@gmail.com.",
 };
 
 export default function ContactoPage() {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "ContactPage",
-    name: "Contacto SoySupremo",
+    name: "Contacto Supremo",
     url: `${SITE_URL}/contacto`,
   };
 

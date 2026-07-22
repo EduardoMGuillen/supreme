@@ -4,7 +4,7 @@ import { readStore } from "@/lib/store";
 
 export const metadata: Metadata = {
   title: "Blog",
-  description: "Noticias, bastidores y anuncios de SoySupremo.",
+  description: "Noticias, bastidores y anuncios de Supremo.",
 };
 
 export default async function BlogPage() {

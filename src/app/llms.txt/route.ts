@@ -1,9 +1,9 @@
 import { SITE_URL } from "@/lib/site";
 
 export async function GET() {
-  const body = `# SoySupremo
+  const body = `# Supremo
 
-> Sitio oficial de Supremo (SoySupremo): humor, música, partidos y lives.
+> Sitio oficial de Supremo: humor, música, partidos y lives.
 
 - Home: ${SITE_URL}
 - Contenido: ${SITE_URL}/contenido

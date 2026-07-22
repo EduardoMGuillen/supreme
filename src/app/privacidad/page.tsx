@@ -9,7 +9,7 @@ export default function PrivacidadPage() {
         <h1 className="font-display text-5xl mb-8">Privacidad</h1>
         <div className="space-y-4 leading-relaxed text-ink-soft">
           <p>
-            soysupremohn.com es el sitio oficial de SoySupremo. Recopilamos la
+            soysupremohn.com es el sitio oficial de Supremo. Recopilamos la
             información que envías en el formulario de contacto (nombre, email,
             empresa y mensaje) únicamente para responderte.
           </p>

@@ -15,7 +15,7 @@ export async function generateMetadata({
   if (!event) return { title: "Evento" };
   return {
     title: event.title,
-    description: event.description || `${event.title} — SoySupremo`,
+    description: event.description || `${event.title} — Supremo`,
     openGraph: {
       images: event.cover ? [event.cover] : undefined,
     },
@@ -48,7 +48,7 @@ export default async function EventoDetailPage({
     description: event.description,
     organizer: {
       "@type": "Person",
-      name: "SoySupremo",
+      name: "Supremo",
       url: SITE_URL,
     },
     offers: event.ticketUrl
